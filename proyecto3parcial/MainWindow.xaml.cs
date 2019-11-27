@@ -36,16 +36,18 @@ using System.Collections.ObjectModel;
             InitializeComponent();
             //Produccion serie1 = new Serie(); //polimorfismo 
             //((Serie)serie1).Temporada
-            Serie serie1 = new Serie("terror", 3, "hola", "victor", "ujknjbhjnbjnb", "1", 5, "serie");
-            Serie serie2 = new Serie("gretrg", 3, "sferfe", "efrefref", "refref", "4", 4, "serie");
-            Serie serie3 = new Serie("gretrg", 8, "sferfe", "efrefref", "refref", "4", 3, "serie");
-            Pelicula peli1 = new Pelicula("comedia", 1997, "la bella", "Di caprio", "una ecuela es atacada por un hada que se quiere hacer pasar por malefica", 4, "pelicula");
-
+            Serie serie1 = new Serie("Aventura", 3, "hola", "victor", "ujknjbhjnbjnb", "1", 5, "serie");
+            Serie serie2 = new Serie("Aventura", 3, "sferfe", "efrefref", "refref", "3", 4, "serie");
+            Serie serie3 = new Serie("Aventura", 8, "sferfe", "efrefref", "refref", "2", 3, "serie");
+            Serie seriebase = new Serie("Aventura", 9, "huji", "hifhighf", "bhhvbhf", "1", 0, "serie");
+            //Pelicula peli1 = new Pelicula("comedia", 1997, "la bella", "Di caprio", "una ecuela es atacada por un hada que se quiere hacer pasar por malefica", 1, "pelicula");
+            Pelicula peli2 = new Pelicula("Aventura", 9990, "la bella durmiente", "Victor", "njlkhjhlkjjhj", 1, "pelicula");
 
             Datos.Add(serie1);
             Datos.Add(serie2);
-            Datos.Add(peli1);
+            Datos.Add(peli2);
             Datos.Add(serie3);
+            Datos.Add(seriebase);
 
 
 

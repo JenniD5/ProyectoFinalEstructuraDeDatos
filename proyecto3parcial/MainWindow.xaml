@@ -54,7 +54,7 @@
         <Image x:Name="_4estrellas" Margin="450,481,756,197" Source="estrellas4.png" Stretch="Fill" Visibility="Hidden"/>
         <Image x:Name="_5estrellas" Margin="450,481,756,197" Source="estrellas5.png" Stretch="Fill" Visibility="Hidden"/>
         <Image x:Name="_0estrellas" Margin="450,481,756,197" Source="estrellas0.png" Stretch="Fill" Visibility="Hidden"/>
-        <Label x:Name="txtdesaparecer" Content="Favor de llenar todos los campos" HorizontalAlignment="Left" Margin="529,679,0,0" VerticalAlignment="Top" Height="38" Width="170" Visibility="Hidden"/>
+        <Label x:Name="txtdesaparecer" Content="Llena todos los campos" HorizontalAlignment="Left" Margin="529,679,0,0" VerticalAlignment="Top" Height="38" Width="170" Visibility="Hidden"/>
 
     </Grid>
 </Window>
