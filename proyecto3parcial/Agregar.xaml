@@ -33,6 +33,7 @@
         <TextBox x:Name="txtdescripcion" HorizontalAlignment="Left" Height="114" Margin="28,156,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="620"/>
         <TextBlock HorizontalAlignment="Left" Margin="24,290,0,0" TextWrapping="Wrap" Text="Rating:" VerticalAlignment="Top" Width="76"/>
         <ComboBox x:Name="rant" HorizontalAlignment="Left" Margin="65,290,0,0" VerticalAlignment="Top" Width="55" Height="30">
+            <ComboBoxItem Content="0"/>
             <ComboBoxItem Content="1"/>
             <ComboBoxItem Content="2"/>
             <ComboBoxItem Content="3"/>
@@ -41,7 +42,8 @@
         </ComboBox>
         <TextBlock x:Name="lbldirector" HorizontalAlignment="Left" Margin="422,90,0,0" TextWrapping="Wrap" Text="Director:" VerticalAlignment="Top" Height="18" Width="58" Visibility="Hidden"/>
         <TextBox x:Name="txtdirector" HorizontalAlignment="Left" Height="30" Margin="503,90,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="210" Visibility="Hidden"/>
-        <TextBox x:Name="txttipo2" HorizontalAlignment="Left" Height="23" Margin="205,49,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txttipo2" HorizontalAlignment="Left" Height="23" Margin="422,285,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="poner el tipo elegido todo en minusculas" HorizontalAlignment="Left" Margin="188,285,0,0" VerticalAlignment="Top" Height="25" Width="245"/>
 
     </Grid>
 </UserControl>

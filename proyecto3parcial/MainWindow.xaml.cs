@@ -89,7 +89,8 @@ using System.Collections.ObjectModel;
             _3estrellas.Visibility = Visibility.Hidden;
             _2estrellas.Visibility = Visibility.Hidden;
             _1estrellas.Visibility = Visibility.Hidden;
-
+            _0estrellas.Visibility = Visibility.Hidden;
+            btneditar.Visibility = Visibility.Hidden;
 
 
             grid2.Children.Add(new Agregar());
@@ -177,7 +178,7 @@ using System.Collections.ObjectModel;
 
         private void Btnletras1_Click(object sender, RoutedEventArgs e)
         {
-
+            _0estrellas.Visibility = Visibility.Hidden;
             _1estrellas.Visibility = Visibility.Hidden;
             _2estrellas.Visibility = Visibility.Hidden;
             _3estrellas.Visibility = Visibility.Hidden;
@@ -243,6 +244,7 @@ using System.Collections.ObjectModel;
 
                     if (Datos[lsttodo.SelectedIndex].Rating == 5)
                     {
+                        _0estrellas.Visibility = Visibility.Hidden;
                         _1estrellas.Visibility = Visibility.Hidden;
                         _5estrellas.Visibility = Visibility.Visible;
                         _4estrellas.Visibility = Visibility.Hidden;
@@ -251,6 +253,7 @@ using System.Collections.ObjectModel;
                     }
                     if (Datos[lsttodo.SelectedIndex].Rating == 4)
                     {
+                        _0estrellas.Visibility = Visibility.Hidden;
                         _1estrellas.Visibility = Visibility.Hidden;
                         _4estrellas.Visibility = Visibility.Visible;
                         _5estrellas.Visibility = Visibility.Hidden;
@@ -259,6 +262,7 @@ using System.Collections.ObjectModel;
                     }
                     if (Datos[lsttodo.SelectedIndex].Rating == 3)
                     {
+                        _0estrellas.Visibility = Visibility.Hidden;
                         _4estrellas.Visibility = Visibility.Hidden;
                         _5estrellas.Visibility = Visibility.Hidden;
                         _3estrellas.Visibility = Visibility.Visible;
@@ -267,6 +271,7 @@ using System.Collections.ObjectModel;
                     }
                     if (Datos[lsttodo.SelectedIndex].Rating == 2)
                     {
+                        _0estrellas.Visibility = Visibility.Hidden;
                         _1estrellas.Visibility = Visibility.Hidden;
                         _4estrellas.Visibility = Visibility.Hidden;
                         _5estrellas.Visibility = Visibility.Hidden;
@@ -275,10 +280,20 @@ using System.Collections.ObjectModel;
                     }
                     if (Datos[lsttodo.SelectedIndex].Rating == 1)
                     {
+                        _0estrellas.Visibility = Visibility.Hidden;
                         _2estrellas.Visibility = Visibility.Hidden;
                         _4estrellas.Visibility = Visibility.Hidden;
                         _5estrellas.Visibility = Visibility.Hidden;
                         _1estrellas.Visibility = Visibility.Visible;
+                        _3estrellas.Visibility = Visibility.Hidden;
+                    }
+                    if (Datos[lsttodo.SelectedIndex].Rating == 0)
+                    {
+                        _1estrellas.Visibility = Visibility.Hidden;
+                        _2estrellas.Visibility = Visibility.Hidden;
+                        _4estrellas.Visibility = Visibility.Hidden;
+                        _5estrellas.Visibility = Visibility.Hidden;
+                        _0estrellas.Visibility = Visibility.Visible;
                         _3estrellas.Visibility = Visibility.Hidden;
                     }
 
@@ -308,6 +323,7 @@ using System.Collections.ObjectModel;
 
                     if (Datos[lsttodo.SelectedIndex].Rating == 5)
                     {
+                        _0estrellas.Visibility = Visibility.Hidden;
                         _3estrellas.Visibility = Visibility.Hidden;
                         _5estrellas.Visibility = Visibility.Visible;
                         _4estrellas.Visibility = Visibility.Hidden;
@@ -316,6 +332,7 @@ using System.Collections.ObjectModel;
                     }
                     if (Datos[lsttodo.SelectedIndex].Rating == 4)
                     {
+                        _0estrellas.Visibility = Visibility.Hidden;
                         _3estrellas.Visibility = Visibility.Hidden;
                         _4estrellas.Visibility = Visibility.Visible;
                         _5estrellas.Visibility = Visibility.Hidden;
@@ -324,6 +341,7 @@ using System.Collections.ObjectModel;
                     }
                     if (Datos[lsttodo.SelectedIndex].Rating == 3)
                     {
+                        _0estrellas.Visibility = Visibility.Hidden;
                         _3estrellas.Visibility = Visibility.Visible;
                         _4estrellas.Visibility = Visibility.Hidden;
                         _5estrellas.Visibility = Visibility.Hidden;
@@ -332,6 +350,7 @@ using System.Collections.ObjectModel;
                     }
                     if (Datos[lsttodo.SelectedIndex].Rating == 2)
                     {
+                        _0estrellas.Visibility = Visibility.Hidden;
                         _2estrellas.Visibility = Visibility.Visible;
                         _4estrellas.Visibility = Visibility.Hidden;
                         _5estrellas.Visibility = Visibility.Hidden;
@@ -340,7 +359,17 @@ using System.Collections.ObjectModel;
                     }
                     if (Datos[lsttodo.SelectedIndex].Rating == 1)
                     {
+                        _0estrellas.Visibility = Visibility.Hidden;
                         _1estrellas.Visibility = Visibility.Visible;
+                        _2estrellas.Visibility = Visibility.Hidden;
+                        _4estrellas.Visibility = Visibility.Hidden;
+                        _5estrellas.Visibility = Visibility.Hidden;
+                        _3estrellas.Visibility = Visibility.Hidden;
+                    }
+                    if (Datos[lsttodo.SelectedIndex].Rating == 0)
+                    {
+                        _1estrellas.Visibility = Visibility.Hidden;
+                        _0estrellas.Visibility = Visibility.Visible;
                         _2estrellas.Visibility = Visibility.Hidden;
                         _4estrellas.Visibility = Visibility.Hidden;
                         _5estrellas.Visibility = Visibility.Hidden;
@@ -394,6 +423,8 @@ using System.Collections.ObjectModel;
                     _3estrellas.Visibility = Visibility.Hidden;
                     _2estrellas.Visibility = Visibility.Hidden;
                     _1estrellas.Visibility = Visibility.Hidden;
+                    _0estrellas.Visibility = Visibility.Hidden;
+
 
                     btnnuevoagregar.Visibility = Visibility.Hidden;
 
@@ -432,8 +463,9 @@ using System.Collections.ObjectModel;
                 _3estrellas.Visibility = Visibility.Hidden;
                 _2estrellas.Visibility = Visibility.Hidden;
                 _1estrellas.Visibility = Visibility.Hidden;
+                _0estrellas.Visibility = Visibility.Hidden;
 
-                btnnuevoagregar.Visibility = Visibility.Hidden;
+                    btnnuevoagregar.Visibility = Visibility.Hidden;
 
 
             }
@@ -468,6 +500,7 @@ using System.Collections.ObjectModel;
                 _3estrellas.Visibility = Visibility.Hidden;
                 _2estrellas.Visibility = Visibility.Hidden;
                 _1estrellas.Visibility = Visibility.Hidden;
+                _0estrellas.Visibility = Visibility.Hidden;
                 btnnuevoagregar.Visibility = Visibility.Hidden;
                 //Datos[lsttodo.SelectedIndex].Año = ((editar)(grid2.Children[0])).txtaño.SelectionStart;
             }
@@ -506,52 +539,327 @@ using System.Collections.ObjectModel;
                
                 grid2.Children.Add(new editar());
 
-                Datos[lsttodo.SelectedIndex].Titulo = ((editar)(grid2.Children[0])).txttitulo.Text;
-                Datos[lsttodo.SelectedIndex].Director = ((editar)(grid2.Children[0])).txtproduccion.Text;
-                Datos[lsttodo.SelectedIndex].Temporadas = ((editar)(grid2.Children[0])).lbtemporadas_.Text;
-                Datos[lsttodo.SelectedIndex].Genero = ((editar)(grid2.Children[0])).lbgenero.Text;
+                if (string.IsNullOrEmpty((((editar)(grid2.Children[0])).txttitulo.Text)))
+                {
+                    txtdesaparecer.Visibility = Visibility.Visible;
+                    btnnuevoagregar.Visibility = Visibility.Visible;
+                    btnordennum1.Visibility = Visibility.Hidden;
+                    btnordennum2.Visibility = Visibility.Hidden;
+                    btnletras1.Visibility = Visibility.Hidden;
+                    btnletras2.Visibility = Visibility.Hidden;
+                    btneditar.Visibility = Visibility.Hidden;
+                    btnguardar.Visibility = Visibility.Visible;
+                    btncancelar_.Visibility = Visibility.Visible;
+                    btneliminar.Visibility = Visibility.Visible;
+                    btnnuevoagregar.Visibility = Visibility.Hidden;
+                    grid2.Children.Clear();
+                    grid2.Children.Add(new editar());
+                    ((editar)(grid2.Children[0])).lblnombre.Text = Datos[lsttodo.SelectedIndex].Tipo;
+                    ((editar)(grid2.Children[0])).txttitulo.Text = "";
+                    ((editar)(grid2.Children[0])).txtdescripcion.Text = Datos[lsttodo.SelectedIndex].Sinopsis;
+                    ((editar)(grid2.Children[0])).txtproduccion.Text = Datos[lsttodo.SelectedIndex].Director;
+                    ((editar)(grid2.Children[0])).lbtemporadas_.Text = Datos[lsttodo.SelectedIndex].Temporadas;
+                    ((editar)(grid2.Children[0])).lbgenero.Text = Datos[lsttodo.SelectedIndex].Genero;
+                    var rating = Datos[lsttodo.SelectedIndex].Rating.ToString();
+                    ((editar)(grid2.Children[0])).rant.Text = rating;
+                    var años = Datos[lsttodo.SelectedIndex].Año.ToString();
+                    ((editar)(grid2.Children[0])).txtaño.Text = años;
+                    
 
-                var año23 = Datos[lsttodo.SelectedIndex].Año.ToString();
-                var año7 = Convert.ToInt32(((editar)(grid2.Children[0])).txtaño.Text);
 
-                Datos[lsttodo.SelectedIndex].Año = año7;
-                var rating2 = Convert.ToInt32(((editar)(grid2.Children[0])).rant.Text);
-                Datos[lsttodo.SelectedIndex].Rating = rating2;
-                _4estrellas.Visibility = Visibility.Hidden;
-                _5estrellas.Visibility = Visibility.Hidden;
-                _3estrellas.Visibility = Visibility.Hidden;
-                _2estrellas.Visibility = Visibility.Hidden;
-                _1estrellas.Visibility = Visibility.Hidden;
+                    return;
+                }
+                
+                else if (string.IsNullOrEmpty((((editar)(grid2.Children[0])).txtproduccion.Text)))
+                {
+                    txtdesaparecer.Visibility = Visibility.Visible;
+                    btnnuevoagregar.Visibility = Visibility.Visible;
+                    btnordennum1.Visibility = Visibility.Hidden;
+                    btnordennum2.Visibility = Visibility.Hidden;
+                    btnletras1.Visibility = Visibility.Hidden;
+                    btnletras2.Visibility = Visibility.Hidden;
+                    btneditar.Visibility = Visibility.Hidden;
+                    btnguardar.Visibility = Visibility.Visible;
+                    btncancelar_.Visibility = Visibility.Visible;
+                    btneliminar.Visibility = Visibility.Visible;
+                    btnnuevoagregar.Visibility = Visibility.Hidden;
+                    grid2.Children.Clear();
+                    grid2.Children.Add(new editar());
+                    ((editar)(grid2.Children[0])).lblnombre.Text = Datos[lsttodo.SelectedIndex].Tipo;
+                    ((editar)(grid2.Children[0])).txttitulo.Text = Datos[lsttodo.SelectedIndex].Titulo;
+                    ((editar)(grid2.Children[0])).txtdescripcion.Text = Datos[lsttodo.SelectedIndex].Sinopsis;
+                    ((editar)(grid2.Children[0])).txtproduccion.Text = "";
+                    ((editar)(grid2.Children[0])).lbtemporadas_.Text = Datos[lsttodo.SelectedIndex].Temporadas;
+                    ((editar)(grid2.Children[0])).lbgenero.Text = Datos[lsttodo.SelectedIndex].Genero;
+                    var rating = Datos[lsttodo.SelectedIndex].Rating.ToString();
+                    ((editar)(grid2.Children[0])).rant.Text = rating;
+                    var años = Datos[lsttodo.SelectedIndex].Año.ToString();
+                    ((editar)(grid2.Children[0])).txtaño.Text = años;
 
-                btnnuevoagregar.Visibility = Visibility.Hidden;
+                    return;
+                }
+                
+                else if (string.IsNullOrEmpty((((editar)(grid2.Children[0])).txtdescripcion.Text)))
+                {
+                    txtdesaparecer.Visibility = Visibility.Visible;
+                    btnnuevoagregar.Visibility = Visibility.Visible;
+                    btnordennum1.Visibility = Visibility.Hidden;
+                    btnordennum2.Visibility = Visibility.Hidden;
+                    btnletras1.Visibility = Visibility.Hidden;
+                    btnletras2.Visibility = Visibility.Hidden;
+                    btneditar.Visibility = Visibility.Hidden;
+                    btnguardar.Visibility = Visibility.Visible;
+                    btncancelar_.Visibility = Visibility.Visible;
+                    btneliminar.Visibility = Visibility.Visible;
+                    btnnuevoagregar.Visibility = Visibility.Hidden;
+                    grid2.Children.Clear();
+                    grid2.Children.Add(new editar());
+                    ((editar)(grid2.Children[0])).lblnombre.Text = Datos[lsttodo.SelectedIndex].Tipo;
+                    ((editar)(grid2.Children[0])).txttitulo.Text = Datos[lsttodo.SelectedIndex].Titulo;
+                    ((editar)(grid2.Children[0])).txtdescripcion.Text ="";
+                    ((editar)(grid2.Children[0])).txtproduccion.Text = Datos[lsttodo.SelectedIndex].Director;
+                    ((editar)(grid2.Children[0])).lbtemporadas_.Text = Datos[lsttodo.SelectedIndex].Temporadas;
+                    ((editar)(grid2.Children[0])).lbgenero.Text = Datos[lsttodo.SelectedIndex].Genero;
+                    var rating = Datos[lsttodo.SelectedIndex].Rating.ToString();
+                    ((editar)(grid2.Children[0])).rant.Text = rating;
+                    var años = Datos[lsttodo.SelectedIndex].Año.ToString();
+                    ((editar)(grid2.Children[0])).txtaño.Text = años;
+                    return;
+                }
+                
+                else if (string.IsNullOrEmpty((((editar)(grid2.Children[0])).txtaño.Text)))
+                {
+                    txtdesaparecer.Visibility = Visibility.Visible;
+                    btnnuevoagregar.Visibility = Visibility.Visible;
+                    btnordennum1.Visibility = Visibility.Hidden;
+                    btnordennum2.Visibility = Visibility.Hidden;
+                    btnletras1.Visibility = Visibility.Hidden;
+                    btnletras2.Visibility = Visibility.Hidden;
+                    btneditar.Visibility = Visibility.Hidden;
+                    btnguardar.Visibility = Visibility.Visible;
+                    btncancelar_.Visibility = Visibility.Visible;
+                    btneliminar.Visibility = Visibility.Visible;
+                    btnnuevoagregar.Visibility = Visibility.Hidden;
+                    grid2.Children.Clear();
+                    grid2.Children.Add(new editar());
+                    ((editar)(grid2.Children[0])).lblnombre.Text = Datos[lsttodo.SelectedIndex].Tipo;
+                    ((editar)(grid2.Children[0])).txttitulo.Text = Datos[lsttodo.SelectedIndex].Titulo;
+                    ((editar)(grid2.Children[0])).txtdescripcion.Text = Datos[lsttodo.SelectedIndex].Sinopsis;
+                    ((editar)(grid2.Children[0])).txtproduccion.Text = Datos[lsttodo.SelectedIndex].Director;
+                    ((editar)(grid2.Children[0])).lbtemporadas_.Text = Datos[lsttodo.SelectedIndex].Temporadas;
+                    ((editar)(grid2.Children[0])).lbgenero.Text = Datos[lsttodo.SelectedIndex].Genero;
+                    var rating = Datos[lsttodo.SelectedIndex].Rating.ToString();
+                    ((editar)(grid2.Children[0])).rant.Text = rating;
+                    var años = Datos[lsttodo.SelectedIndex].Año.ToString();
+                    ((editar)(grid2.Children[0])).txtaño.Text = "";
+                    return;
+                }
+                
+
+                else {
+                    Datos[lsttodo.SelectedIndex].Genero = ((editar)(grid2.Children[0])).lbgenero.Text;
+                    Datos[lsttodo.SelectedIndex].Titulo = ((editar)(grid2.Children[0])).txttitulo.Text;
+                    Datos[lsttodo.SelectedIndex].Director = ((editar)(grid2.Children[0])).txtproduccion.Text;
+                    Datos[lsttodo.SelectedIndex].Temporadas = ((editar)(grid2.Children[0])).lbtemporadas_.Text;
+                    
+                    Datos[lsttodo.SelectedIndex].Sinopsis = ((editar)(grid2.Children[0])).txtdescripcion.Text;
+
+                    var año23 = Datos[lsttodo.SelectedIndex].Año.ToString();
+                    var año7 = Convert.ToInt32(((editar)(grid2.Children[0])).txtaño.Text);
+
+                    Datos[lsttodo.SelectedIndex].Año = año7;
+                    var rating2 = Convert.ToInt32(((editar)(grid2.Children[0])).rant.Text);
+                    Datos[lsttodo.SelectedIndex].Rating = rating2;
+                    _4estrellas.Visibility = Visibility.Hidden;
+                    _5estrellas.Visibility = Visibility.Hidden;
+                    _3estrellas.Visibility = Visibility.Hidden;
+                    _2estrellas.Visibility = Visibility.Hidden;
+                    _1estrellas.Visibility = Visibility.Hidden;
+                    _0estrellas.Visibility = Visibility.Hidden;
+
+                    btnnuevoagregar.Visibility = Visibility.Hidden;
+                    grid2.Children.Clear();
+                    btnguardar.Visibility = Visibility.Hidden;
+                    txtdesaparecer.Visibility = Visibility.Hidden;
+                }
             }
 
-            if (Datos[lsttodo.SelectedIndex].Tipo == "pelicula")
+            else if (Datos[lsttodo.SelectedIndex].Tipo == "pelicula")
             {
-              
+                
                 grid2.Children.Add(new editarpeli());
-                Datos[lsttodo.SelectedIndex].Titulo = ((editarpeli)(grid2.Children[0])).txttitulo.Text;
-                Datos[lsttodo.SelectedIndex].Director = ((editarpeli)(grid2.Children[0])).txtproduccion.Text;
-               
-                Datos[lsttodo.SelectedIndex].Genero = ((editarpeli)(grid2.Children[0])).lbgenero.Text;
 
-                var año23 = Datos[lsttodo.SelectedIndex].Año.ToString();
-                var año72 = Convert.ToInt32(((editarpeli)(grid2.Children[0])).txtaño.Text);
 
-                Datos[lsttodo.SelectedIndex].Año = año72;
-                var rating22 = Convert.ToInt32(((editarpeli)(grid2.Children[0])).rant.Text);
-                Datos[lsttodo.SelectedIndex].Rating = rating22;
-                _4estrellas.Visibility = Visibility.Hidden;
-                _5estrellas.Visibility = Visibility.Hidden;
-                _3estrellas.Visibility = Visibility.Hidden;
-                _2estrellas.Visibility = Visibility.Hidden;
-                _1estrellas.Visibility = Visibility.Hidden;
 
-                btnnuevoagregar.Visibility = Visibility.Hidden;
+
+                if (string.IsNullOrEmpty((((editarpeli)(grid2.Children[0])).txttitulo.Text)))
+                {
+                    txtdesaparecer.Visibility = Visibility.Visible;
+                    btnnuevoagregar.Visibility = Visibility.Visible;
+                    btnordennum1.Visibility = Visibility.Hidden;
+                    btnordennum2.Visibility = Visibility.Hidden;
+                    btnletras1.Visibility = Visibility.Hidden;
+                    btnletras2.Visibility = Visibility.Hidden;
+                    btneditar.Visibility = Visibility.Hidden;
+                    btnguardar.Visibility = Visibility.Visible;
+                    btncancelar_.Visibility = Visibility.Visible;
+                    btneliminar.Visibility = Visibility.Visible;
+                    btnnuevoagregar.Visibility = Visibility.Hidden;
+                    grid2.Children.Clear();
+                    grid2.Children.Add(new editarpeli());
+
+                    ((editarpeli)(grid2.Children[0])).txttitulo.Text = "" ;
+
+                    ((editarpeli)(grid2.Children[0])).lblnombre.Text = Datos[lsttodo.SelectedIndex].Tipo;
+                    ((editarpeli)(grid2.Children[0])).txtdescripcion.Text = Datos[lsttodo.SelectedIndex].Sinopsis;
+                    ((editarpeli)(grid2.Children[0])).txtproduccion.Text = Datos[lsttodo.SelectedIndex].Director;
+                    ((editarpeli)(grid2.Children[0])).lbgenero.Text = Datos[lsttodo.SelectedIndex].Genero;
+
+                    var rating = Datos[lsttodo.SelectedIndex].Rating.ToString();
+                    ((editarpeli)(grid2.Children[0])).rant.Text = rating;
+                    var años = Datos[lsttodo.SelectedIndex].Año.ToString();
+                    ((editarpeli)(grid2.Children[0])).txtaño.Text = años;
+
+
+
+                    return;
+                }
+
+                else if (string.IsNullOrEmpty((((editarpeli)(grid2.Children[0])).txtproduccion.Text)))
+                {
+                    txtdesaparecer.Visibility = Visibility.Visible;
+                    btnnuevoagregar.Visibility = Visibility.Visible;
+                    btnordennum1.Visibility = Visibility.Hidden;
+                    btnordennum2.Visibility = Visibility.Hidden;
+                    btnletras1.Visibility = Visibility.Hidden;
+                    btnletras2.Visibility = Visibility.Hidden;
+                    btneditar.Visibility = Visibility.Hidden;
+                    btnguardar.Visibility = Visibility.Visible;
+                    btncancelar_.Visibility = Visibility.Visible;
+                    btneliminar.Visibility = Visibility.Visible;
+                    btnnuevoagregar.Visibility = Visibility.Hidden;
+                    grid2.Children.Clear();
+                    grid2.Children.Add(new editarpeli());
+
+                    ((editarpeli)(grid2.Children[0])).txttitulo.Text = Datos[lsttodo.SelectedIndex].Titulo;
+
+                    ((editarpeli)(grid2.Children[0])).lblnombre.Text = Datos[lsttodo.SelectedIndex].Tipo;
+                    ((editarpeli)(grid2.Children[0])).txtdescripcion.Text = Datos[lsttodo.SelectedIndex].Sinopsis;
+                    ((editarpeli)(grid2.Children[0])).txtproduccion.Text ="";
+                    ((editarpeli)(grid2.Children[0])).lbgenero.Text = Datos[lsttodo.SelectedIndex].Genero;
+
+                    var rating = Datos[lsttodo.SelectedIndex].Rating.ToString();
+                    ((editarpeli)(grid2.Children[0])).rant.Text = rating;
+                    var años = Datos[lsttodo.SelectedIndex].Año.ToString();
+                    ((editarpeli)(grid2.Children[0])).txtaño.Text = años;
+
+                    return;
+                }
+
+                else if (string.IsNullOrEmpty((((editarpeli)(grid2.Children[0])).txtdescripcion.Text)))
+                {
+                    txtdesaparecer.Visibility = Visibility.Visible;
+                    btnnuevoagregar.Visibility = Visibility.Visible;
+                    btnordennum1.Visibility = Visibility.Hidden;
+                    btnordennum2.Visibility = Visibility.Hidden;
+                    btnletras1.Visibility = Visibility.Hidden;
+                    btnletras2.Visibility = Visibility.Hidden;
+                    btneditar.Visibility = Visibility.Hidden;
+                    btnguardar.Visibility = Visibility.Visible;
+                    btncancelar_.Visibility = Visibility.Visible;
+                    btneliminar.Visibility = Visibility.Visible;
+                    btnnuevoagregar.Visibility = Visibility.Hidden;
+                    grid2.Children.Clear();
+                    grid2.Children.Add(new editarpeli());
+
+                    ((editarpeli)(grid2.Children[0])).txttitulo.Text = Datos[lsttodo.SelectedIndex].Titulo;
+
+                    ((editarpeli)(grid2.Children[0])).lblnombre.Text = Datos[lsttodo.SelectedIndex].Tipo;
+                    ((editarpeli)(grid2.Children[0])).txtdescripcion.Text = "";
+                    ((editarpeli)(grid2.Children[0])).txtproduccion.Text = Datos[lsttodo.SelectedIndex].Director;
+                    ((editarpeli)(grid2.Children[0])).lbgenero.Text = Datos[lsttodo.SelectedIndex].Genero;
+
+                    var rating = Datos[lsttodo.SelectedIndex].Rating.ToString();
+                    ((editarpeli)(grid2.Children[0])).rant.Text = rating;
+                    var años = Datos[lsttodo.SelectedIndex].Año.ToString();
+                    ((editarpeli)(grid2.Children[0])).txtaño.Text = años;
+                    return;
+                }
+
+                else if (string.IsNullOrEmpty((((editarpeli)(grid2.Children[0])).txtaño.Text)))
+                {
+                    txtdesaparecer.Visibility = Visibility.Visible;
+                    btnnuevoagregar.Visibility = Visibility.Visible;
+                    btnordennum1.Visibility = Visibility.Hidden;
+                    btnordennum2.Visibility = Visibility.Hidden;
+                    btnletras1.Visibility = Visibility.Hidden;
+                    btnletras2.Visibility = Visibility.Hidden;
+                    btneditar.Visibility = Visibility.Hidden;
+                    btnguardar.Visibility = Visibility.Visible;
+                    btncancelar_.Visibility = Visibility.Visible;
+                    btneliminar.Visibility = Visibility.Visible;
+                    btnnuevoagregar.Visibility = Visibility.Hidden;
+                    grid2.Children.Clear();
+                    grid2.Children.Add(new editarpeli());
+
+                    ((editarpeli)(grid2.Children[0])).lbgenero.Text = Datos[lsttodo.SelectedIndex].Genero;
+                    ((editarpeli)(grid2.Children[0])).txttitulo.Text = Datos[lsttodo.SelectedIndex].Titulo;
+
+                    ((editarpeli)(grid2.Children[0])).lblnombre.Text = Datos[lsttodo.SelectedIndex].Tipo;
+                    ((editarpeli)(grid2.Children[0])).txtdescripcion.Text = Datos[lsttodo.SelectedIndex].Sinopsis;
+                    ((editarpeli)(grid2.Children[0])).txtproduccion.Text = Datos[lsttodo.SelectedIndex].Director;
+                   
+
+                    var rating = Datos[lsttodo.SelectedIndex].Rating.ToString();
+                    ((editarpeli)(grid2.Children[0])).rant.Text = rating;
+                    var años = Datos[lsttodo.SelectedIndex].Año.ToString();
+                    ((editarpeli)(grid2.Children[0])).txtaño.Text = "";
+                    return;
+                }
+
+                else
+                {
+                    Datos[lsttodo.SelectedIndex].Titulo = ((editarpeli)(grid2.Children[0])).txttitulo.Text;
+                    Datos[lsttodo.SelectedIndex].Director = ((editarpeli)(grid2.Children[0])).txtproduccion.Text;
+
+                    Datos[lsttodo.SelectedIndex].Genero = ((editarpeli)(grid2.Children[0])).lbgenero.Text;
+
+
+                    var año23 = Datos[lsttodo.SelectedIndex].Año.ToString();
+                    var año72 = Convert.ToInt32(((editarpeli)(grid2.Children[0])).txtaño.Text);
+
+                    Datos[lsttodo.SelectedIndex].Año = año72;
+                    var rating22 = Convert.ToInt32(((editarpeli)(grid2.Children[0])).rant.Text);
+                    Datos[lsttodo.SelectedIndex].Rating = rating22;
+                    _4estrellas.Visibility = Visibility.Hidden;
+                    _5estrellas.Visibility = Visibility.Hidden;
+                    _3estrellas.Visibility = Visibility.Hidden;
+                    _2estrellas.Visibility = Visibility.Hidden;
+                    _1estrellas.Visibility = Visibility.Hidden;
+                    _0estrellas.Visibility = Visibility.Hidden;
+
+                    btnnuevoagregar.Visibility = Visibility.Hidden;
+                    
+                    grid2.Children.Clear();
+                    btnguardar.Visibility = Visibility.Hidden;
+                    txtdesaparecer.Visibility = Visibility.Hidden;
+
+                }
 
             }
-                grid2.Children.Clear();
-            btnguardar.Visibility = Visibility.Hidden;
+
+            /*if (string.IsNullOrEmpty(((editarpeli)(grid2.Children[0])).txtaño.Text))
+            {
+
+                txtdesaparecer.Visibility = Visibility.Visible;
+
+                return;
+
+            }*/
+
+          
+
+          
 
 
 
@@ -645,6 +953,7 @@ using System.Collections.ObjectModel;
             btneliminar.Visibility = Visibility.Hidden;
             btnguardar.Visibility = Visibility.Hidden;
 
+            _0estrellas.Visibility = Visibility.Hidden;
             _1estrellas.Visibility = Visibility.Hidden;
             _2estrellas.Visibility = Visibility.Hidden;
             _3estrellas.Visibility = Visibility.Hidden;
@@ -662,24 +971,210 @@ using System.Collections.ObjectModel;
             btnordennum1.Visibility = Visibility.Visible;
             btnordennum2.Visibility = Visibility.Visible;
 
-            if ((((Agregar)(grid2.Children[0])).rbpelicula.IsChecked)== true && (((Agregar)(grid2.Children[0])).rbserie.IsChecked) ==false)
-                {
-                Datos.Add(new Pelicula((((Agregar)(grid2.Children[0])).lbgenero.Text), Convert.ToInt32(((Agregar)(grid2.Children[0])).txtaño.Text), (((Agregar)(grid2.Children[0])).txttitulo.Text),
-               (((Agregar)(grid2.Children[0])).txtdirector.Text), (((Agregar)(grid2.Children[0])).txtdescripcion.Text), Convert.ToInt32(((Agregar)(grid2.Children[0])).rant.Text), (((Agregar)(grid2.Children[0])).txttipo2.Text)));
-            }
-            else if ((((Agregar)(grid2.Children[0])).rbpelicula.IsChecked) == false && (((Agregar)(grid2.Children[0])).rbserie.IsChecked) == true)
+            if ((((Agregar)(grid2.Children[0])).rbpelicula.IsChecked) == true && (((Agregar)(grid2.Children[0])).rbserie.IsChecked) == false)
             {
-                Datos.Add(new Serie((((Agregar)(grid2.Children[0])).txtproduccion.Text), Convert.ToInt32(((Agregar)(grid2.Children[0])).txtaño.Text), (((Agregar)(grid2.Children[0])).txttitulo.Text), (((Agregar)(grid2.Children[0])).txtdirector.Text),
-                (((Agregar)(grid2.Children[0])).txtproduccion.Text), (((Agregar)(grid2.Children[0])).txttemporadas.Text), Convert.ToInt32(((Agregar)(grid2.Children[0])).rant.Text), (((Agregar)(grid2.Children[0])).txttipo2.Text)));
+                if (string.IsNullOrEmpty((((Agregar)(grid2.Children[0])).txttitulo.Text)))
+                {
+                    txtdesaparecer.Visibility = Visibility.Visible;
+                    btnnuevoagregar.Visibility = Visibility.Visible;
+                    btnordennum1.Visibility = Visibility.Hidden;
+                    btnordennum2.Visibility = Visibility.Hidden;
+                    btnletras1.Visibility = Visibility.Hidden;
+                    btnletras2.Visibility = Visibility.Hidden;
+                    btneditar.Visibility = Visibility.Hidden;
+                    return;
+                }
+                else if (string.IsNullOrEmpty((((Agregar)(grid2.Children[0])).lbgenero.Text)))
+                {
+                    txtdesaparecer.Visibility = Visibility.Visible;
+                    btnnuevoagregar.Visibility = Visibility.Visible;
+                    btnordennum1.Visibility = Visibility.Hidden;
+                    btnordennum2.Visibility = Visibility.Hidden;
+                    btnletras1.Visibility = Visibility.Hidden;
+                    btnletras2.Visibility = Visibility.Hidden;
+                    btneditar.Visibility = Visibility.Hidden;
+                    return;
+                }
+                else if (string.IsNullOrEmpty((((Agregar)(grid2.Children[0])).txtdirector.Text)))
+                {
+                    txtdesaparecer.Visibility = Visibility.Visible;
+                    btnnuevoagregar.Visibility = Visibility.Visible;
+                    btnordennum1.Visibility = Visibility.Hidden;
+                    btnordennum2.Visibility = Visibility.Hidden;
+                    btnletras1.Visibility = Visibility.Hidden;
+                    btnletras2.Visibility = Visibility.Hidden;
+                    btneditar.Visibility = Visibility.Hidden;
+                    return;
+                }
+                else if (string.IsNullOrEmpty((((Agregar)(grid2.Children[0])).txtdescripcion.Text)))
+                {
+                    txtdesaparecer.Visibility = Visibility.Visible;
+                    btnnuevoagregar.Visibility = Visibility.Visible;
+                    btnordennum1.Visibility = Visibility.Hidden;
+                    btnordennum2.Visibility = Visibility.Hidden;
+                    btnletras1.Visibility = Visibility.Hidden;
+                    btnletras2.Visibility = Visibility.Hidden;
+                    btneditar.Visibility = Visibility.Hidden;
+                    return;
+                }
+                else if (string.IsNullOrEmpty((((Agregar)(grid2.Children[0])).txttipo2.Text)))
+                {
+                    txtdesaparecer.Visibility = Visibility.Visible;
+                    btnnuevoagregar.Visibility = Visibility.Visible;
+                    btnordennum1.Visibility = Visibility.Hidden;
+                    btnordennum2.Visibility = Visibility.Hidden;
+                    btnletras1.Visibility = Visibility.Hidden;
+                    btnletras2.Visibility = Visibility.Hidden;
+                    btneditar.Visibility = Visibility.Hidden;
+                    return;
+                }
+                else if (string.IsNullOrEmpty((((Agregar)(grid2.Children[0])).txtaño.Text)))
+                {
+                    txtdesaparecer.Visibility = Visibility.Visible;
+                    btnnuevoagregar.Visibility = Visibility.Visible;
+                    btnordennum1.Visibility = Visibility.Hidden;
+                    btnordennum2.Visibility = Visibility.Hidden;
+                    btnletras1.Visibility = Visibility.Hidden;
+                    btnletras2.Visibility = Visibility.Hidden;
+                    btneditar.Visibility = Visibility.Hidden;
+                    return;
+                }
+                else if (string.IsNullOrEmpty((((Agregar)(grid2.Children[0])).rant.Text)))
+                {
+                    txtdesaparecer.Visibility = Visibility.Visible;
+                    btnnuevoagregar.Visibility = Visibility.Visible;
+                    btnordennum1.Visibility = Visibility.Hidden;
+                    btnordennum2.Visibility = Visibility.Hidden;
+                    btnletras1.Visibility = Visibility.Hidden;
+                    btnletras2.Visibility = Visibility.Hidden;
+                    btneditar.Visibility = Visibility.Hidden;
+
+                    return;
+                }
+
+                else
+                {
+                    Datos.Add(new Pelicula((((Agregar)(grid2.Children[0])).lbgenero.Text), Convert.ToInt32(((Agregar)(grid2.Children[0])).txtaño.Text), (((Agregar)(grid2.Children[0])).txttitulo.Text),
+                   (((Agregar)(grid2.Children[0])).txtdirector.Text), (((Agregar)(grid2.Children[0])).txtdescripcion.Text), Convert.ToInt32(((Agregar)(grid2.Children[0])).rant.Text), (((Agregar)(grid2.Children[0])).txttipo2.Text)));
+
+                    grid2.Children.Clear();
+                    btncancelarnuevo.Visibility = Visibility.Hidden;
+                }
+            }
+            else if ((((Agregar)(grid2.Children[0])).rbserie.IsChecked) == true && (((Agregar)(grid2.Children[0])).rbpelicula.IsChecked) == false)
+            {
+                if (string.IsNullOrEmpty((((Agregar)(grid2.Children[0])).txttitulo.Text)))
+                {
+                    txtdesaparecer.Visibility = Visibility.Visible;
+                    btnnuevoagregar.Visibility = Visibility.Visible;
+                    btnordennum1.Visibility = Visibility.Hidden;
+                    btnordennum2.Visibility = Visibility.Hidden;
+                    btnletras1.Visibility = Visibility.Hidden;
+                    btnletras2.Visibility = Visibility.Hidden;
+                    btneditar.Visibility = Visibility.Hidden;
+                    return;
+                }
+                else if (string.IsNullOrEmpty((((Agregar)(grid2.Children[0])).lbgenero.Text)))
+                {
+                    txtdesaparecer.Visibility = Visibility.Visible;
+                    btnnuevoagregar.Visibility = Visibility.Visible;
+                    btnordennum1.Visibility = Visibility.Hidden;
+                    btnordennum2.Visibility = Visibility.Hidden;
+                    btnletras1.Visibility = Visibility.Hidden;
+                    btnletras2.Visibility = Visibility.Hidden;
+                    btneditar.Visibility = Visibility.Hidden;
+                    return;
+                }
+                else if (string.IsNullOrEmpty((((Agregar)(grid2.Children[0])).txttipo2.Text)))
+                {
+                    txtdesaparecer.Visibility = Visibility.Visible;
+                    btnnuevoagregar.Visibility = Visibility.Visible;
+                    btnordennum1.Visibility = Visibility.Hidden;
+                    btnordennum2.Visibility = Visibility.Hidden;
+                    btnletras1.Visibility = Visibility.Hidden;
+                    btnletras2.Visibility = Visibility.Hidden;
+                    btneditar.Visibility = Visibility.Hidden;
+                    return;
+                }
+                else if (string.IsNullOrEmpty((((Agregar)(grid2.Children[0])).txtproduccion.Text)))
+                {
+                    txtdesaparecer.Visibility = Visibility.Visible;
+                    btnnuevoagregar.Visibility = Visibility.Visible;
+                    btnordennum1.Visibility = Visibility.Hidden;
+                    btnordennum2.Visibility = Visibility.Hidden;
+                    btnletras1.Visibility = Visibility.Hidden;
+                    btnletras2.Visibility = Visibility.Hidden;
+                    btneditar.Visibility = Visibility.Hidden;
+                    return;
+                }
+                else if (string.IsNullOrEmpty((((Agregar)(grid2.Children[0])).txtdescripcion.Text)))
+                {
+                    txtdesaparecer.Visibility = Visibility.Visible;
+                    btnnuevoagregar.Visibility = Visibility.Visible;
+                    btnordennum1.Visibility = Visibility.Hidden;
+                    btnordennum2.Visibility = Visibility.Hidden;
+                    btnletras1.Visibility = Visibility.Hidden;
+                    btnletras2.Visibility = Visibility.Hidden;
+                    btneditar.Visibility = Visibility.Hidden;
+                    return;
+                }
+              
+                else if (string.IsNullOrEmpty((((Agregar)(grid2.Children[0])).txtaño.Text)))
+                {
+                    txtdesaparecer.Visibility = Visibility.Visible;
+                    btnnuevoagregar.Visibility = Visibility.Visible;
+                    btnordennum1.Visibility = Visibility.Hidden;
+                    btnordennum2.Visibility = Visibility.Hidden;
+                    btnletras1.Visibility = Visibility.Hidden;
+                    btnletras2.Visibility = Visibility.Hidden;
+                    btneditar.Visibility = Visibility.Hidden;
+                    return;
+                }
+                else if (string.IsNullOrEmpty((((Agregar)(grid2.Children[0])).rant.Text)))
+                {
+                    txtdesaparecer.Visibility = Visibility.Visible;
+                    btnnuevoagregar.Visibility = Visibility.Visible;
+                    btnordennum1.Visibility = Visibility.Hidden;
+                    btnordennum2.Visibility = Visibility.Hidden;
+                    btnletras1.Visibility = Visibility.Hidden;
+                    btnletras2.Visibility = Visibility.Hidden;
+                    btneditar.Visibility = Visibility.Hidden;
+                    return;
+                }
+
+                else if (string.IsNullOrEmpty((((Agregar)(grid2.Children[0])).lbtemporadas_.Text)))
+                {
+                    txtdesaparecer.Visibility = Visibility.Visible;
+                    btnnuevoagregar.Visibility = Visibility.Visible;
+                    btnordennum1.Visibility = Visibility.Hidden;
+                    btnordennum2.Visibility = Visibility.Hidden;
+                    btnletras1.Visibility = Visibility.Hidden;
+                    btnletras2.Visibility = Visibility.Hidden;
+                    btneditar.Visibility = Visibility.Hidden;
+                    return;
+                }
+
+
+                else
+                {
+                    Datos.Add(new Serie((((Agregar)(grid2.Children[0])).txtproduccion.Text), Convert.ToInt32(((Agregar)(grid2.Children[0])).txtaño.Text), (((Agregar)(grid2.Children[0])).txttitulo.Text), (((Agregar)(grid2.Children[0])).txtdirector.Text),
+                    (((Agregar)(grid2.Children[0])).txtproduccion.Text), (((Agregar)(grid2.Children[0])).txttemporadas.Text), Convert.ToInt32(((Agregar)(grid2.Children[0])).rant.Text), (((Agregar)(grid2.Children[0])).txttipo2.Text)));
+
+                    grid2.Children.Clear();
+                    btncancelarnuevo.Visibility = Visibility.Hidden;
+                    txtdesaparecer.Visibility = Visibility.Hidden;
+                }
             }
             /*Datos.Add(new Serie((((Agregar)(grid2.Children[0])).txtproduccion.Text),Convert.ToInt32(((Agregar)(grid2.Children[0])).txtaño.Text), (((Agregar)(grid2.Children[0])).txttitulo.Text), (((Agregar)(grid2.Children[0])).txtdirector.Text), 
                 (((Agregar)(grid2.Children[0])).txtproduccion.Text), (((Agregar)(grid2.Children[0])).txttemporadas.Text), Convert.ToInt32(((Agregar)(grid2.Children[0])).rant.Text)));
 
             Datos.Add(new Pelicula((((Agregar)(grid2.Children[0])).lbgenero.Text), Convert.ToInt32(((Agregar)(grid2.Children[0])).txtaño.Text), (((Agregar)(grid2.Children[0])).txttitulo.Text),
                 (((Agregar)(grid2.Children[0])).txtdirector.Text), (((Agregar)(grid2.Children[0])).txtdescripcion.Text), Convert.ToInt32(((Agregar)(grid2.Children[0])).rant.Text)));*/
-            grid2.Children.Clear();
-            btncancelarnuevo.Visibility = Visibility.Hidden;
-        }
+            else
+            {
+                txtdesaparecer.Visibility = Visibility.Visible;
+            }
+            }
 
         private void Btnregresar_Click(object sender, RoutedEventArgs e)
         {
@@ -711,6 +1206,7 @@ using System.Collections.ObjectModel;
             btnordennum1.Visibility = Visibility.Visible;
             btnordennum2.Visibility = Visibility.Visible;
 
+            _0estrellas.Visibility = Visibility.Hidden;
             _1estrellas.Visibility = Visibility.Hidden;
             _2estrellas.Visibility = Visibility.Hidden;
             _3estrellas.Visibility = Visibility.Hidden;
@@ -726,6 +1222,7 @@ using System.Collections.ObjectModel;
             grid2.Children.Clear();
             btncancelarnuevo.Visibility = Visibility.Hidden;
             btnnuevoagregar.Visibility = Visibility.Hidden;
+            _0estrellas.Visibility = Visibility.Hidden;
             _1estrellas.Visibility = Visibility.Hidden;
             _2estrellas.Visibility = Visibility.Hidden;
             _3estrellas.Visibility = Visibility.Hidden;
