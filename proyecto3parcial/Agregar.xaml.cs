@@ -22,7 +22,7 @@ namespace proyecto3parcial
     /// <summary>
     /// Lógica de interacción para Agregar.xaml
     /// </summary>
-    public partial class Agregar : UserControl
+    public partial class Agregar : UserControl 
     {
         
 
@@ -52,6 +52,9 @@ namespace proyecto3parcial
             txttemporadas.Visibility = Visibility.Hidden;
             txtproduccion.Visibility = Visibility.Hidden;
             lbtemporadas_.Visibility = Visibility.Hidden;
+            
+
+            
         }
 
         private void Rbserie_Checked(object sender, RoutedEventArgs e)
@@ -63,6 +66,9 @@ namespace proyecto3parcial
             txttemporadas.Visibility = Visibility.Visible;
             txtproduccion.Visibility = Visibility.Visible;
             lbtemporadas_.Visibility = Visibility.Visible;
+            
         }
+
+       // ((MainWindow) Application.Current.MainWindow).txtForm1TextBox.Text = "Some text";
     }
 }

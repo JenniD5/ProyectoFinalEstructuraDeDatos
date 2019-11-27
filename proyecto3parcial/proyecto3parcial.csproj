@@ -55,8 +55,14 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="editarpeli.xaml.cs">
+      <DependentUpon>editarpeli.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Produccion.cs" />
     <Compile Include="Serie.cs" />
+    <Compile Include="verpeli.xaml.cs">
+      <DependentUpon>verpeli.xaml</DependentUpon>
+    </Compile>
     <Compile Include="visualizar.xaml.cs">
       <DependentUpon>visualizar.xaml</DependentUpon>
     </Compile>
@@ -65,6 +71,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="editar.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="editarpeli.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -88,6 +98,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="verpeli.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="visualizar.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -119,6 +133,33 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="DSC_8061 %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="5estrellas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="estrellas6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="4estrellas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="3estrellas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="2estrellas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="1estrella.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="estrellas4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="estrellas5.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

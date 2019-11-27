@@ -4,35 +4,27 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:proyecto3parcial"
-             mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800">
-    <Grid>
-        <Grid.Background>
-            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                <GradientStop Color="#FF385BD4" Offset="0"/>
-                <GradientStop Color="#FFEDA7A7" Offset="1"/>
-            </LinearGradientBrush>
-        </Grid.Background>
-        <Grid x:Name="gridvisalizar" HorizontalAlignment="Left" Height="440" Margin="0,10,0,-0.4" VerticalAlignment="Top" Width="780">
+             mc:Ignorable="d" Height="355" Width="795">
+    <Grid Margin="0,0,300.4,0.2">
+        <Grid x:Name="gridvisalizar" HorizontalAlignment="Left" Margin="10,10,-300.2,0" Width="785" Height="340" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.494">
             <Label Content="Visualizar Elemento " HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="29" Width="175" FontSize="18"/>
-            <Label x:Name="lbltipo" Content="tipodeshow" HorizontalAlignment="Left" Margin="45,64,0,0" VerticalAlignment="Top" Height="32" Width="100"/>
             <TextBlock x:Name="lblaño" HorizontalAlignment="Left" Height="30" Margin="45,109,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="72"/>
             <TextBlock HorizontalAlignment="Left" Margin="10,69,0,0" TextWrapping="Wrap" Text="Tipo:" VerticalAlignment="Top"/>
             <TextBlock HorizontalAlignment="Left" Margin="10,109,0,0" TextWrapping="Wrap" Text="Año:" VerticalAlignment="Top"/>
             <TextBlock HorizontalAlignment="Left" Margin="30,158,0,0" TextWrapping="Wrap" Text="Descripcion:" VerticalAlignment="Top"/>
-            <TextBlock x:Name="lbldescripcion" HorizontalAlignment="Left" Margin="28,178,0,141" TextWrapping="Wrap" Text="TextBlock" Width="742"/>
+            <TextBlock x:Name="lbldescripcion" HorizontalAlignment="Left" Margin="28,178,0,70" TextWrapping="Wrap" Text="TextBlock" Width="742"/>
             <TextBlock HorizontalAlignment="Left" Margin="189,109,0,0" TextWrapping="Wrap" Text="Genero:" VerticalAlignment="Top" Width="51"/>
             <TextBlock x:Name="lblgenero" HorizontalAlignment="Left" Height="28" Margin="245,109,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="147"/>
             <TextBlock HorizontalAlignment="Left" Margin="420,109,0,0" TextWrapping="Wrap" Text="Temporadas:" VerticalAlignment="Top" Width="76"/>
-            <TextBlock x:Name="lbltemporadas" HorizontalAlignment="Left" Height="30" Margin="496,107,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="57"/>
-            <TextBlock HorizontalAlignment="Left" Margin="583,107,0,0" TextWrapping="Wrap" Text="produccion/direccion:" VerticalAlignment="Top"/>
-            <TextBlock x:Name="lblproduccion" HorizontalAlignment="Left" Height="30" Margin="583,126,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="121"/>
-            <TextBlock HorizontalAlignment="Left" Margin="18,304,0,0" TextWrapping="Wrap" Text="Rating:" VerticalAlignment="Top" Width="76"/>
-            <TextBlock x:Name="lbltitulo"  HorizontalAlignment="Left" Height="30" Margin="420,55,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="344"/>
+            <TextBlock x:Name="lbltemporadas"  HorizontalAlignment="Left" Height="30" Margin="496,107,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="57"/>
+            <TextBlock HorizontalAlignment="Left" Margin="583,107,0,0" TextWrapping="Wrap" Text="Produccion:" VerticalAlignment="Top"/>
+            <TextBlock x:Name="lblproduccion" HorizontalAlignment="Left" Height="30" Margin="659,107,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="121"/>
+            <TextBlock HorizontalAlignment="Left" Margin="18,309,0,0" TextWrapping="Wrap" Text="Rating:" VerticalAlignment="Top" Width="76"/>
+            <TextBlock x:Name="lbltitulo"  HorizontalAlignment="Left" Height="21" Margin="396,64,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="344"/>
             <TextBlock HorizontalAlignment="Left" Margin="359,64,0,0" TextWrapping="Wrap" Text="Titulo:" VerticalAlignment="Top"/>
-            <Image x:Name="imgestrellas" HorizontalAlignment="Left" Height="35" Margin="65,299,0,0" VerticalAlignment="Top" Width="138"/>
+            <Label x:Name="lblaño1" Content="{Binding Path=Content}" HorizontalAlignment="Left" Margin="200,35,0,0" VerticalAlignment="Top" Height="30" Width="60"/>
+            <TextBlock x:Name="lbltipo" HorizontalAlignment="Left" Margin="40,69,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="27" Width="77"/>
         </Grid>
-        <Image HorizontalAlignment="Left" Height="100" Margin="391,390,0,-40.4" VerticalAlignment="Top" Width="100"/>
 
     </Grid>
 </UserControl>

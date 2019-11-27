@@ -8,19 +8,22 @@ namespace proyecto3parcial
 {
     class Pelicula:Produccion
     {
-        public string  Genero { get; set; }
+        
 
 
 
 
         public Pelicula() { }
-        public Pelicula (string genero, int año, string titulo, string director, string sinopsis)
+        public Pelicula(string genero, int año, string titulo, string director, string sinopsis, int rating, string tipo )
         {
             Genero = genero;
             Titulo = titulo;
             Director = director;
             Año = año;
             Sinopsis = sinopsis;
+            Rating = rating;
+            Tipo = tipo; 
+            
         }
 
 

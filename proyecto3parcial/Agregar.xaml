@@ -4,12 +4,11 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:proyecto3parcial"
-             mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800">
-    <Grid>
+             mc:Ignorable="d" Height="330" Width="805">
+    <Grid Margin="0,0,-0.2,10">
         <Label Content="Agregar nuevo elemento" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="30" Width="150"/>
         <TextBlock HorizontalAlignment="Left" Margin="10,45,0,0" TextWrapping="Wrap" Text="Tipo:" VerticalAlignment="Top"/>
-        <RadioButton x:Name="rbpelicula" Content="Pelicula" HorizontalAlignment="Left" Margin="124,52,0,0" VerticalAlignment="Top" Checked="Rbpelicula_Checked"/>
+        <RadioButton x:Name="rbpelicula" Content="Pelicula" HorizontalAlignment="Left" Margin="121,49,0,0" VerticalAlignment="Top" Checked="Rbpelicula_Checked"/>
         <RadioButton x:Name="rbserie" Content="Serie" HorizontalAlignment="Left" Margin="54,49,0,0" VerticalAlignment="Top" Checked="Rbserie_Checked"/>
         <TextBlock HorizontalAlignment="Left" Margin="359,45,0,0" TextWrapping="Wrap" Text="Titulo:" VerticalAlignment="Top"/>
         <TextBox x:Name="txttitulo" HorizontalAlignment="Left" Height="30" Margin="410,45,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="344"/>
@@ -40,9 +39,9 @@
             <ComboBoxItem Content="4"/>
             <ComboBoxItem Content="5"/>
         </ComboBox>
-        <Button x:Name="btnguardarnuevo" Content="ok" HorizontalAlignment="Left" Margin="45,360,0,0" VerticalAlignment="Top" Width="75" Click="Btnguardarnuevo_Click"/>
         <TextBlock x:Name="lbldirector" HorizontalAlignment="Left" Margin="422,90,0,0" TextWrapping="Wrap" Text="Director:" VerticalAlignment="Top" Height="18" Width="58" Visibility="Hidden"/>
         <TextBox x:Name="txtdirector" HorizontalAlignment="Left" Height="30" Margin="503,90,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="210" Visibility="Hidden"/>
+        <TextBox x:Name="txttipo2" HorizontalAlignment="Left" Height="23" Margin="205,49,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
 
     </Grid>
 </UserControl>

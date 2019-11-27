@@ -18,24 +18,24 @@
             <ComboBoxItem Content="Aventura"/>
         </ComboBox>
         <TextBlock HorizontalAlignment="Left" Margin="389,90,0,0" TextWrapping="Wrap" Text="Temporadas:" VerticalAlignment="Top" Width="76"/>
-        <ComboBox x:Name="lbtemporadas_" HorizontalAlignment="Left" Margin="470,90,0,0" VerticalAlignment="Top" Width="55" Height="30">
+        <ComboBox x:Name="lbtemporadas_" HorizontalAlignment="Left" Margin="470,90,0,0" VerticalAlignment="Top" Width="55" Height="30" SelectionChanged="Lbtemporadas__SelectionChanged">
             <ComboBoxItem Content="1"/>
             <ComboBoxItem Content="2"/>
             <ComboBoxItem Content="3"/>
         </ComboBox>
-        <TextBlock HorizontalAlignment="Left" Margin="530,89,0,0" TextWrapping="Wrap" Text="Produccion/Director:" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="557,90,0,0" TextWrapping="Wrap" Text="Produccion:" VerticalAlignment="Top"/>
         <TextBox x:Name="txtproduccion" HorizontalAlignment="Left" Height="30" Margin="644,90,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="121"/>
         <TextBlock HorizontalAlignment="Left" Margin="28,135,0,0" TextWrapping="Wrap" Text="Descripcion/sinopsis:" VerticalAlignment="Top"/>
         <TextBox x:Name="txtdescripcion" HorizontalAlignment="Left" Height="114" Margin="28,156,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="620"/>
         <TextBlock HorizontalAlignment="Left" Margin="24,290,0,0" TextWrapping="Wrap" Text="Rating:" VerticalAlignment="Top" Width="76"/>
-        <ComboBox x:Name="rant" HorizontalAlignment="Left" Margin="65,290,0,0" VerticalAlignment="Top" Width="55" Height="30">
+        <ComboBox x:Name="rant" HorizontalAlignment="Left" Margin="65,290,0,0" VerticalAlignment="Top" Width="55" Height="30" SelectionChanged="Rant_SelectionChanged">
             <ComboBoxItem Content="1"/>
             <ComboBoxItem Content="2"/>
             <ComboBoxItem Content="3"/>
             <ComboBoxItem Content="4"/>
             <ComboBoxItem Content="5"/>
         </ComboBox>
-        <TextBlock x:Name="lblnombre" HorizontalAlignment="Left" Margin="45,45,0,0" TextWrapping="Wrap" Text="Serie/pelicula " VerticalAlignment="Top" Height="30" Width="95"/>
+        <TextBlock x:Name="lblnombre" HorizontalAlignment="Left" Margin="45,45,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="30" Width="95"/>
         <TextBlock x:Name="lbleditar" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="EDITAR ELEMENTO " VerticalAlignment="Top" Height="30" Width="145"/>
 
     </Grid>

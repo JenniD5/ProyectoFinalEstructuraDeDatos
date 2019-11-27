@@ -5,8 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:proyecto3parcial"
         mc:Ignorable="d"
-        Title="MainWindow" Height="861.915" Width="1667.878">
-    <Grid RenderTransformOrigin="0.5,0.5" Margin="0,0,-1.4,-5">
+        Title="MainWindow" Height="756.825" Width="1357.775">
+    <Grid RenderTransformOrigin="0.5,0.5" Margin="0,0,-1.8,0.2">
         <Grid.RenderTransform>
             <TransformGroup>
                 <ScaleTransform/>
@@ -15,29 +15,44 @@
                 <TranslateTransform/>
             </TransformGroup>
         </Grid.RenderTransform>
-        <ListView x:Name="lsttodo" HorizontalAlignment="Left" Height="633" Margin="25,25,0,0" VerticalAlignment="Top" Width="425" SelectionChanged="Lsttodo_SelectionChanged_1">
+        <ListView x:Name="lsttodo" HorizontalAlignment="Left" Height="383" Margin="17,47,0,0" VerticalAlignment="Top" Width="346" SelectionChanged="Lsttodo_SelectionChanged_1">
             <ListView.View>
                 <GridView>
-                    <GridViewColumn DisplayMemberBinding="{Binding Titulo}" Header="Titulo" Width="310"/>
-                    <GridViewColumn DisplayMemberBinding="{Binding Año}" Header="Año"  Width="115"/>
+                    <GridViewColumn DisplayMemberBinding="{Binding Titulo}" Header="Titulo" Width="200"/>
+                    <GridViewColumn DisplayMemberBinding="{Binding Año}" Header="Año"  Width="146"/>
                 </GridView>
             </ListView.View>
         </ListView>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="25,703,0,0" VerticalAlignment="Top" Width="159" Height="41"/>
-        <Button x:Name="btnletras1" Content="+=&gt;- letras" HorizontalAlignment="Left" Margin="25,703,0,0" VerticalAlignment="Top" Width="159" Height="41" Click="Btnletras1_Click"/>
-        <Button x:Name="btnletras2" Content="letras -=&gt;+" HorizontalAlignment="Left" Margin="25,755,0,0" VerticalAlignment="Top" Width="159" Height="40"/>
-        <Button x:Name="btnordennum1" Content="numeros +/-" HorizontalAlignment="Left" Margin="237,703,0,0" VerticalAlignment="Top" Width="160" Height="41" Click="Btnordennum1_Click"/>
-        <Button x:Name="btnordennum2" Content="numeros -/+" HorizontalAlignment="Left" Margin="237,755,0,0" VerticalAlignment="Top" Width="160" Height="40"/>
-        <Button x:Name="btneditar" Content="Nuevo" HorizontalAlignment="Left" Margin="467,752,0,0" VerticalAlignment="Top" Width="143" Height="43" Click="Btneditar_Click"/>
+        <Button x:Name="btnletras1" Content="+=&gt;- letras" HorizontalAlignment="Left" Margin="17,615,0,0" VerticalAlignment="Top" Width="130" Height="38" Click="Btnletras1_Click"/>
+        <Button x:Name="btnletras2" Content="letras -=&gt;+" HorizontalAlignment="Left" Margin="17,663,0,0" VerticalAlignment="Top" Width="130" Height="35" Click="Btnletras2_Click"/>
+        <Button x:Name="btnordennum1" Content="numeros +/-" HorizontalAlignment="Left" Margin="190,615,0,0" VerticalAlignment="Top" Width="130" Height="38" Click="Btnordennum1_Click"/>
+        <Button x:Name="btnordennum2" Content="numeros -/+" HorizontalAlignment="Left" Margin="190,663,0,0" VerticalAlignment="Top" Width="130" Height="35" Click="Btnordennum2_Click"/>
+        <Button x:Name="btneditar" Content="Nuevo" HorizontalAlignment="Left" Margin="356,660,0,0" VerticalAlignment="Top" Width="117" Height="38" Click="Btneditar_Click"/>
 
-        <Grid x:Name="gridprincipal" HorizontalAlignment="Left" Height="537" Margin="493,122,0,0" VerticalAlignment="Top" Width="1083">
-            <Grid x:Name="grid2" HorizontalAlignment="Left" Height="456" Margin="10,10,0,0" VerticalAlignment="Top" Width="1073"/>
-            <Button x:Name="btnedicion" Content="Habilitar edicion" HorizontalAlignment="Left" Margin="35,503,0,0" VerticalAlignment="Top" Width="103" Height="24" Click="Btnedicion_Click" Visibility="Hidden"/>
-            <Button x:Name="btneliminar" Content="eliminar" HorizontalAlignment="Left" Margin="198,503,0,10" Width="103" Click="Btneliminar_Click" Visibility="Visible"/>
-            <Button x:Name="btncancelar_" Content="cancelar" HorizontalAlignment="Left" Margin="352,503,0,0" VerticalAlignment="Top" Width="103" Height="24" Visibility="Visible"/>
+        <Grid x:Name="grid2" HorizontalAlignment="Left" Height="413" Margin="410,63,0,0" VerticalAlignment="Top" Width="882"/>
+        <Button x:Name="btnguardar" Content="guardar" HorizontalAlignment="Left" Height="34" Margin="908,596,0,0" VerticalAlignment="Top" Width="115"  Click="Btnguardar_Click" Visibility="Hidden"/>
+        <Button x:Name="btnedicion" Content="Habilitar edicion" HorizontalAlignment="Left" Margin="908,596,0,0" VerticalAlignment="Top" Width="115" Height="34" Click="Btnedicion_Click" Visibility="Hidden"/>
+        <Button x:Name="btneliminar" Content="eliminar" HorizontalAlignment="Left" Margin="908,596,0,0" Width="115" Height="34" Click="Btneliminar_Click" Visibility="Hidden"/>
+        <Button x:Name="btncancelar_" Content="cancelar" HorizontalAlignment="Left" Margin="1047,596,0,0" VerticalAlignment="Top" Width="106" Height="34" Visibility="Hidden" Click="Btncancelar__Click"/>
+        <Button x:Name="btnnuevoagregar" Content="Nuevo/agregar" HorizontalAlignment="Left" Margin="866,596,0,0" VerticalAlignment="Top" Width="125" Click="Btnnuevoagregar_Click" Visibility="Hidden" Height="34"/>
 
-        </Grid>
-        <Button x:Name="btnguardar" Content="guardar" HorizontalAlignment="Left" Height="34" Margin="995,616,0,0" VerticalAlignment="Top" Width="110" Click="Btnguardar_Click"/>
+
+        <Image x:Name="_3estrellas" Margin="450,481,756,197" Source="3estrellas.png" Stretch="Fill" Visibility="Hidden"/>
+        <Image x:Name="_2estrellas" Margin="450,481,756,197" Source="2estrellas.png" Stretch="Fill" Visibility="Hidden"/>
+        <Image x:Name="_1estrellas" Margin="450,481,756,197" Source="1estrella.png" Stretch="Fill" Visibility="Hidden"/>
+        <Button x:Name="btnregresar" Content="Button" HorizontalAlignment="Left" Margin="440,705,0,0" VerticalAlignment="Top" Width="143" Height="41" RenderTransformOrigin="0.5,0.5" Click="Btnregresar_Click" Visibility="Hidden">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.409"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <Button x:Name="btncancelarnuevo" Content="Cancelar/nuevo" HorizontalAlignment="Left" Margin="1028,596,0,0" VerticalAlignment="Top" Width="125" Height="34" Click="Btncancelarnuevo_Click" Visibility="Hidden"/>
+        <Image x:Name="_4estrellas" Margin="450,481,756,197" Source="estrellas4.png" Stretch="Fill" Visibility="Hidden"/>
+        <Image x:Name="_5estrellas" Margin="450,481,756,197" Source="estrellas5.png" Stretch="Fill" Visibility="Hidden"/>
 
     </Grid>
 </Window>

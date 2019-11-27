@@ -24,5 +24,15 @@ namespace proyecto3parcial
         {
             InitializeComponent();
         }
+
+        private void Lbtemporadas__SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
+
+        private void Rant_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
     }
 }

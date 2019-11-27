@@ -6,20 +6,25 @@ using System.Threading.Tasks;
 
 namespace proyecto3parcial
 {
-    class Serie:Produccion
+    class Serie : Produccion
     {
-        public string Genero { get; set; }
-        
+       
+
 
 
         public Serie() { }
-        public Serie(string genero, int año, string titulo, string director, string sinopsis)
+        public Serie(string genero, int año, string titulo, string director, string sinopsis, string temporadas, int rating, string tipo)
         {
-            Genero=genero;
-            Titulo =titulo;
+            Genero = genero;
+            Titulo = titulo;
             Director = director;
             Año = año;
             Sinopsis = sinopsis;
+            Temporadas = temporadas;
+            Rating = rating;
+            Tipo = tipo;
         }
+        
+
     }
 }
