@@ -23,10 +23,10 @@
                 </GridView>
             </ListView.View>
         </ListView>
-        <Button x:Name="btnletras1" Content="+=&gt;- letras" HorizontalAlignment="Left" Margin="17,615,0,0" VerticalAlignment="Top" Width="130" Height="38" Click="Btnletras1_Click"/>
-        <Button x:Name="btnletras2" Content="letras -=&gt;+" HorizontalAlignment="Left" Margin="17,663,0,0" VerticalAlignment="Top" Width="130" Height="35" Click="Btnletras2_Click"/>
-        <Button x:Name="btnordennum1" Content="numeros +/-" HorizontalAlignment="Left" Margin="190,615,0,0" VerticalAlignment="Top" Width="130" Height="38" Click="Btnordennum1_Click"/>
-        <Button x:Name="btnordennum2" Content="numeros -/+" HorizontalAlignment="Left" Margin="190,663,0,0" VerticalAlignment="Top" Width="130" Height="35" Click="Btnordennum2_Click"/>
+        <Button x:Name="btnletras1" Content="-=&gt;+ letras" HorizontalAlignment="Left" Margin="17,615,0,0" VerticalAlignment="Top" Width="130" Height="38" Click="Btnletras1_Click"/>
+        <Button x:Name="btnletras2" Content="letras +=&gt;-" HorizontalAlignment="Left" Margin="17,663,0,0" VerticalAlignment="Top" Width="130" Height="35" Click="Btnletras2_Click"/>
+        <Button x:Name="btnordennum1" Content="numeros -/+" HorizontalAlignment="Left" Margin="190,615,0,0" VerticalAlignment="Top" Width="130" Height="38" Click="Btnordennum1_Click"/>
+        <Button x:Name="btnordennum2" Content="numeros +/-" HorizontalAlignment="Left" Margin="190,663,0,0" VerticalAlignment="Top" Width="130" Height="35" Click="Btnordennum2_Click"/>
         <Button x:Name="btneditar" Content="Nuevo" HorizontalAlignment="Left" Margin="356,660,0,0" VerticalAlignment="Top" Width="117" Height="38" Click="Btneditar_Click"/>
 
         <Grid x:Name="grid2" HorizontalAlignment="Left" Height="413" Margin="410,63,0,0" VerticalAlignment="Top" Width="882"/>
