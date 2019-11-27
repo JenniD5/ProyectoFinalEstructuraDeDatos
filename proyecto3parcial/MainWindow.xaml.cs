@@ -1157,9 +1157,11 @@ using System.Collections.ObjectModel;
 
                 else
                 {
-                    Datos.Add(new Serie((((Agregar)(grid2.Children[0])).txtproduccion.Text), Convert.ToInt32(((Agregar)(grid2.Children[0])).txtaño.Text), (((Agregar)(grid2.Children[0])).txttitulo.Text), (((Agregar)(grid2.Children[0])).txtdirector.Text),
-                    (((Agregar)(grid2.Children[0])).txtproduccion.Text), (((Agregar)(grid2.Children[0])).txttemporadas.Text), Convert.ToInt32(((Agregar)(grid2.Children[0])).rant.Text), (((Agregar)(grid2.Children[0])).txttipo2.Text)));
+                   /* Datos.Add(new Serie((((Agregar)(grid2.Children[0])).txtproduccion.Text), Convert.ToInt32(((Agregar)(grid2.Children[0])).txtaño.Text), (((Agregar)(grid2.Children[0])).txttitulo.Text), (((Agregar)(grid2.Children[0])).txtdirector.Text), (((Agregar)(grid2.Children[0])).txtdescripcion.Text)
+                   , (((Agregar)(grid2.Children[0])).lbtemporadas_.Text), Convert.ToInt32(((Agregar)(grid2.Children[0])).rant.Text), (((Agregar)(grid2.Children[0])).txttipo2.Text)));*/
 
+                    Datos.Add(new Serie((((Agregar)(grid2.Children[0])).lbgenero.Text), Convert.ToInt32(((Agregar)(grid2.Children[0])).txtaño.Text), (((Agregar)(grid2.Children[0])).txttitulo.Text), (((Agregar)(grid2.Children[0])).txtproduccion.Text), (((Agregar)(grid2.Children[0])).txtdescripcion.Text),
+                      (((Agregar)(grid2.Children[0])).lbtemporadas_.Text), Convert.ToInt32(((Agregar)(grid2.Children[0])).rant.Text), (((Agregar)(grid2.Children[0])).txttipo2.Text)));
                     grid2.Children.Clear();
                     btncancelarnuevo.Visibility = Visibility.Hidden;
                     txtdesaparecer.Visibility = Visibility.Hidden;
